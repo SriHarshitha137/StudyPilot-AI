@@ -1,0 +1,14 @@
+{
+  "name": "studypilot-ai",
+  "description": "AI-powered personalized study planner with mock-first IBM Granite-ready architecture.",
+  "repository": "https://github.com/your-username/StudyPilotAI",
+  "keywords": ["streamlit", "education", "agentic-ai", "ibm-watsonx", "study-planner"],
+  "env": {
+    "AI_ENGINE": {"description": "mock (default) or granite", "value": "mock", "required": false},
+    "IBM_WATSONX_URL": {"description": "watsonx.ai endpoint", "required": false},
+    "IBM_WATSONX_APIKEY": {"description": "IBM Cloud API key", "required": false},
+    "IBM_WATSONX_PROJECT_ID": {"description": "watsonx project ID", "required": false},
+    "IBM_WATSONX_DEPLOYMENT_ID": {"description": "Optional deployment ID", "required": false}
+  }
+}
+

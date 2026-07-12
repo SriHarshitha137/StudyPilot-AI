@@ -1,0 +1,19 @@
+{
+  "name": "StudyPilot AI Agentic Workflow",
+  "description": "LangFlow-compatible blueprint. Import as a design reference or recreate with JSON Input, Prompt/LLM, and Output components.",
+  "nodes": [
+    {"id": "student_input", "type": "JSONInput", "label": "Student Input"},
+    {"id": "study_planner", "type": "Prompt", "label": "Study Planner Agent", "template_key": "GENERATE_STUDY_PLAN"},
+    {"id": "revision", "type": "Prompt", "label": "Revision Agent", "template_key": "GENERATE_REVISION_PLAN"},
+    {"id": "analytics", "type": "Prompt", "label": "Analytics Agent", "template_key": "WEAK_SUBJECT_ANALYSIS"},
+    {"id": "motivation", "type": "Prompt", "label": "Motivation Agent", "template_key": "GENERATE_MOTIVATION"},
+    {"id": "engine", "type": "LLM", "label": "IBM Granite Agent / Mock Engine"},
+    {"id": "dashboard_output", "type": "Output", "label": "StudyPilot Dashboard"}
+  ],
+  "edges": [
+    ["student_input", "study_planner"], ["study_planner", "revision"],
+    ["revision", "analytics"], ["analytics", "motivation"],
+    ["motivation", "engine"], ["engine", "dashboard_output"]
+  ]
+}
+

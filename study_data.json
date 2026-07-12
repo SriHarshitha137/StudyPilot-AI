@@ -1,0 +1,19 @@
+{
+  "student_name": "Alex JohnsMadulathaon",
+  "semester": "Semester 4",
+  "exam_date": "2026-08-20",
+  "subjects": [
+    "Mathematics",
+    "Physics",
+    "Computer Science",
+    "English",
+    "Data Structures"
+  ],
+  "weak_subjects": [
+    "Physics",
+    "Mathematics"
+  ],
+  "daily_study_hours": 4,
+  "target_percentage": 85,
+  "completion_percentage": 35
+}
